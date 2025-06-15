@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY RESUME</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #f4f4f4;
+    }
+
+    .top-bar {
+      background-color: #1a1a1a;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .top-bar h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #f4f4f4;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 0;
+      background: #ff3366;
+      transition: 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('wallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #cccccc;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .hero-buttons a {
+      background-color: #ff3366;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #e60050;
+    }
+
+    .resume-card {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      margin: -100px auto 4rem auto;
+      overflow: hidden;
+      max-width: 1100px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .photo-section {
+      flex: 1 1 350px;
+      background-color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .photo-section img {
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .info-section {
+      flex: 2 1 600px;
+      padding: 3rem;
+      color: #f4f4f4;
+    }
+
+    .info-section h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+    }
+
+    .info-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .info-section strong {
+      color: #ff3366;
+    }
+
+    footer {
+      background-color: #111;
+      color: #999;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <h2>MY RESUME</h2>
+    <nav>
+      <a href="education.html" target="_blank">Education</a>
+      <a href="family.html" target="_blank">Family</a>
+      <a href="experience.html" target="_blank">Work Experience</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>One Page Visual Resume</h1>
+      <p>This resume blends strong typography, beautiful layout, and modern style inspired by premium web design trends.</p>
+      <div class="hero-buttons">
+        <a href="#resume">View Profile</a>
+        <a href="education.html" target="_blank">Education</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="resume-card" id="resume">
+    <div class="photo-section">
+      <img src="your-photo.jpg" alt="My Photo" />
+    </div>
+    <div class="info-section">
+      <h1>Muhamad Akmal Amirullah Bin Yaakub</h1>
+      <p><strong>Age:</strong> 21 YEARS OLD</p>
+      <p><strong>Address:</strong> LOT 1486 TAMAN DESA PERMAI, KAMPUNG PADANG BONGOR BINJAI, 16150 KOTA BHARU KELANTAN</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Muhamad Akmal Resume. All rights reserved.
+  </footer>
+</body>
+</html>
